@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,6 +108,9 @@
       color: var(--text-muted);
       padding: 30px;
     }
+    .project-block {
+      margin-bottom: 40px;
+    }
   </style>
 </head>
 <body>
@@ -145,26 +147,32 @@
   </section>
 
   <section id="projects">
-    <h2 id="projects-title">Project: Employee Emotion Detection Using Computer Vision</h2>
-    <ul id="projects-list">
-      <li>Built a deep learning model using Xception and TensorFlow, trained on a filtered FER2013 dataset (10,000 images, 5 emotions).</li>
-      <li>Applied data augmentation and used custom video frames for real-world testing.</li>
-      <li>Achieved high accuracy with early stopping and learning rate scheduling.</li>
-    </ul>
-<h2>Project: Resume Parser using AI</h2>
-<ul>
-  <li>Developed a Python script to automatically extract key information from PDF resumes (e.g., email, phone, education, skills) using PyMuPDF and Regex.</li>
-  <li>Designed to quickly analyze and identify relevant data from structured and unstructured CVs.</li>
-  <li><em>Skills used:</em> Python, Regex, PyMuPDF</li>
-</ul>
-
+    <h2 id="projects-title">Projects</h2>
+    <div id="projects-list">
+      <div class="project-block">
+        <h3>Project: Employee Emotion Detection Using Computer Vision</h3>
+        <ul>
+          <li>Built a deep learning model using Xception and TensorFlow, trained on a filtered FER2013 dataset (10,000 images, 5 emotions).</li>
+          <li>Applied data augmentation and used custom video frames for real-world testing.</li>
+          <li>Achieved high accuracy with early stopping and learning rate scheduling.</li>
+        </ul>
+      </div>
+      <div class="project-block">
+        <h3>Project: Resume Parser using AI</h3>
+        <ul>
+          <li>Developed a Python script to automatically extract key information from PDF resumes (e.g., email, phone, education, skills) using PyMuPDF and Regex.</li>
+          <li>Designed to quickly analyze and identify relevant data from structured and unstructured CVs.</li>
+          <li><em>Skills used:</em> Python, Regex, PyMuPDF</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2 id="contact-title">Contact</h2>
     <p>Email: M.alhujaili90@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammed-alhujaili-8107b8271/" style="color: var(--primary-color);">linkedin.com/in/mohammed-alhujaili</a></p>
-    <p>GitHub: <a href="https://github.com/mohammed-alhujaili" style="color: var(--primary-color);">github.com/mohammed-alhujaili</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/Mohammed1Alhujaili" style="color: var(--primary-color);">linkedin.com/in/Mohammed1Alhujaili</a></p>
+    <p>GitHub: <a href="https://github.com/Mohammed1Alhujaili" style="color: var(--primary-color);">github.com/Mohammed1Alhujaili</a></p>
   </section>
 
   <footer>&copy; 2025 Mohammed Alhujaili</footer>
@@ -177,51 +185,38 @@
 
     function setLanguage(lang) {
       const arText = {
-  welcome: "مرحبًا",
-  subtitle: "أنا محمد الحجيلي، مطور ومهتم بالذكاء الاصطناعي",
-  nav: ['من أنا', 'المشاريع', 'تواصل'],
-  aboutTitle: "نبذة عني",
-  aboutText: "طالب في مجال الذكاء الاصطناعي، أمتلك مهارات في بناء نماذج التعلم الآلي وتحليل البيانات وتطوير حلول ذكية باستخدام بايثون وأطر التعلم العميق.",
-  projectTitle: "المشاريع",
-  projectList: `
-    <h2>المشروع: الكشف عن مشاعر الموظفين باستخدام الرؤية الحاسوبية</h2>
-    <ul>
-      <li>بناء نموذج تعلم عميق باستخدام Xception و TensorFlow، مع تدريب على بيانات FER2013 المعدلة (10,000 صورة، 5 مشاعر).</li>
-      <li>استخدام تعزيز البيانات وتطبيق النموذج على مقاطع فيديو حقيقية.</li>
-      <li>تحقيق دقة عالية باستخدام التوقف المبكر وتقنيات تحسين الأداء.</li>
-    </ul>
-    <h2>المشروع: تحليل السير الذاتية باستخدام الذكاء الاصطناعي</h2>
-    <ul>
-      <li>تطوير سكريبت بلغة بايثون لاستخراج المعلومات الأساسية تلقائيًا من السير الذاتية بصيغة PDF (مثل: البريد الإلكتروني، رقم الجوال، التعليم، المهارات) باستخدام مكتبة PyMuPDF والتعبيرات النمطية (Regex).</li>
-      <li>تصميم البرنامج لتحليل البيانات بسرعة، واستخراج البيانات المهمة سواء كانت منظمة أو غير منظمة.</li>
-      <li><em>المهارات المستخدمة:</em> Python، Regex، PyMuPDF</li>
-    </ul>
-  `
-};
+        welcome: "مرحبًا", subtitle: "أنا محمد الحجيلي، مطور ومهتم بالذكاء الاصطناعي",
+        nav: ['من أنا', 'المشاريع', 'تواصل'],
+        aboutTitle: 'نبذة عني',
+        aboutText: 'طالب في مجال الذكاء الاصطناعي، أمتلك مهارات في بناء نماذج التعلم الآلي وتحليل البيانات وتطوير حلول ذكية باستخدام بايثون وأطر التعلم العميق.',
+        projectTitle: 'المشاريع',
+        projectList: `
+          <div class="project-block">
+            <h3>المشروع: الكشف عن مشاعر الموظفين باستخدام الرؤية الحاسوبية</h3>
+            <ul>
+              <li>بناء نموذج تعلم عميق باستخدام Xception و TensorFlow، مع تدريب على بيانات FER2013 المعدلة (10,000 صورة، 5 مشاعر).</li>
+              <li>استخدام تعزيز البيانات وتطبيق النموذج على مقاطع فيديو حقيقية.</li>
+              <li>تحقيق دقة عالية باستخدام التوقف المبكر وتقنيات تحسين الأداء.</li>
+            </ul>
+          </div>
+          <div class="project-block">
+            <h3>المشروع: تحليل السيرة الذاتية باستخدام الذكاء الاصطناعي</h3>
+            <ul>
+              <li>تطوير سكربت بلغة بايثون لاستخراج المعلومات الأساسية تلقائيًا من السير الذاتية بصيغة PDF (مثل: البريد الإلكتروني، رقم الجوال، التعليم، المهارات) باستخدام مكتبة PyMuPDF والتعبيرات النمطية (Regex).</li>
+              <li>تصميم البرنامج لتحليل البيانات بسرعة، واستخراج البيانات المهمة من السير الذاتية سواء كانت منظمة أو غير منظمة.</li>
+              <li><em>المهارات المستخدمة:</em> Python، Regex، PyMuPDF</li>
+            </ul>
+          </div>`
+      };
 
-const enText = {
-  welcome: "WELCOME",
-  subtitle: "I’m Mohammed Alhujaili, AI Enthusiast & Developer",
-  nav: ['ABOUT', 'PROJECTS', 'CONTACT'],
-  aboutTitle: "About Me",
-  aboutText: "Artificial Intelligence student skilled in building machine learning models, analyzing complex data, and developing AI-driven solutions. Proficient in Python and deep learning frameworks like TensorFlow. Passionate about solving real-world problems through innovative, efficient AI applications.",
-  projectTitle: "Projects",
-  projectList: `
-    <h2>Project: Employee Emotion Detection Using Computer Vision</h2>
-    <ul>
-      <li>Built a deep learning model using Xception and TensorFlow, trained on a filtered FER2013 dataset (10,000 images, 5 emotions).</li>
-      <li>Applied data augmentation and used custom video frames for real-world testing.</li>
-      <li>Achieved high accuracy with early stopping and learning rate scheduling.</li>
-    </ul>
-    <h2>Project: Resume Parser using AI</h2>
-    <ul>
-      <li>Developed a Python script to automatically extract key information from PDF resumes (e.g., email, phone, education, skills) using PyMuPDF and Regex.</li>
-      <li>Designed to quickly analyze and identify relevant data from structured and unstructured CVs.</li>
-      <li><em>Skills used:</em> Python, Regex, PyMuPDF</li>
-    </ul>
-  `
-};
-
+      const enText = {
+        welcome: 'WELCOME', subtitle: 'I’m Mohammed Alhujaili, AI Enthusiast & Developer',
+        nav: ['ABOUT', 'PROJECTS', 'CONTACT'],
+        aboutTitle: 'About Me',
+        aboutText: 'Artificial Intelligence student skilled in building machine learning models, analyzing complex data, and developing AI-driven solutions. Proficient in Python and deep learning frameworks like TensorFlow. Passionate about solving real-world problems through innovative, efficient AI applications.',
+        projectTitle: 'Projects',
+        projectList: document.getElementById('projects-list').innerHTML
+      };
 
       const text = lang === 'ar' ? arText : enText;
       document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
