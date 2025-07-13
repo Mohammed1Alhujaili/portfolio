@@ -177,35 +177,51 @@
 
     function setLanguage(lang) {
       const arText = {
-        welcome: 'مرحبًا', subtitle: 'أنا محمد الحجيلي، مطور ومهتم بالذكاء الاصطناعي',
-        nav: ['من أنا', 'المشاريع', 'تواصل'],
-        aboutTitle: 'نبذة عني',
-        aboutText: 'طالب في مجال الذكاء الاصطناعي، أمتلك مهارات في بناء نماذج التعلم الآلي وتحليل البيانات وتطوير حلول ذكية باستخدام بايثون وأطر التعلم العميق.',
-        projectList: `
-  <li>بناء نموذج تعلم عميق باستخدام Xception و TensorFlow، مع تدريب على بيانات FER2013 المعدلة (10,000 صورة، 5 مشاعر).</li>
-  <li>استخدام تعزيز البيانات وتطبيق النموذج على مقاطع فيديو حقيقية.</li>
-  <li>تحقيق دقة عالية باستخدام التوقف المبكر وتقنيات تحسين الأداء.</li>`,
+  welcome: "مرحبًا",
+  subtitle: "أنا محمد الحجيلي، مطور ومهتم بالذكاء الاصطناعي",
+  nav: ['من أنا', 'المشاريع', 'تواصل'],
+  aboutTitle: "نبذة عني",
+  aboutText: "طالب في مجال الذكاء الاصطناعي، أمتلك مهارات في بناء نماذج التعلم الآلي وتحليل البيانات وتطوير حلول ذكية باستخدام بايثون وأطر التعلم العميق.",
+  projectTitle: "المشاريع",
+  projectList: `
+    <h2>المشروع: الكشف عن مشاعر الموظفين باستخدام الرؤية الحاسوبية</h2>
+    <ul>
+      <li>بناء نموذج تعلم عميق باستخدام Xception و TensorFlow، مع تدريب على بيانات FER2013 المعدلة (10,000 صورة، 5 مشاعر).</li>
+      <li>استخدام تعزيز البيانات وتطبيق النموذج على مقاطع فيديو حقيقية.</li>
+      <li>تحقيق دقة عالية باستخدام التوقف المبكر وتقنيات تحسين الأداء.</li>
+    </ul>
+    <h2>المشروع: تحليل السير الذاتية باستخدام الذكاء الاصطناعي</h2>
+    <ul>
+      <li>تطوير سكريبت بلغة بايثون لاستخراج المعلومات الأساسية تلقائيًا من السير الذاتية بصيغة PDF (مثل: البريد الإلكتروني، رقم الجوال، التعليم، المهارات) باستخدام مكتبة PyMuPDF والتعبيرات النمطية (Regex).</li>
+      <li>تصميم البرنامج لتحليل البيانات بسرعة، واستخراج البيانات المهمة سواء كانت منظمة أو غير منظمة.</li>
+      <li><em>المهارات المستخدمة:</em> Python، Regex، PyMuPDF</li>
+    </ul>
+  `
+};
 
-projectList2: `
-  <h2>المشروع: تحليل السير الذاتية باستخدام الذكاء الاصطناعي</h2>
-  <ul>
-    <li>تطوير سكربت بلغة بايثون لاستخراج المعلومات الأساسية تلقائيًا من السير الذاتية بصيغة PDF (مثل: البريد الإلكتروني، رقم الجوال، التعليم، المهارات) باستخدام مكتبة PyMuPDF والتعبيرات النمطية (Regex).</li>
-    <li>تصميم البرنامج لتحليل البيانات بسرعة، واستخراج البيانات المهمة من السير الذاتية سواء كانت منظمة أو غير منظمة.</li>
-    <li><em>المهارات المستخدمة:</em> Python، Regex، PyMuPDF</li>
-  </ul>`
-      };
+const enText = {
+  welcome: "WELCOME",
+  subtitle: "I’m Mohammed Alhujaili, AI Enthusiast & Developer",
+  nav: ['ABOUT', 'PROJECTS', 'CONTACT'],
+  aboutTitle: "About Me",
+  aboutText: "Artificial Intelligence student skilled in building machine learning models, analyzing complex data, and developing AI-driven solutions. Proficient in Python and deep learning frameworks like TensorFlow. Passionate about solving real-world problems through innovative, efficient AI applications.",
+  projectTitle: "Projects",
+  projectList: `
+    <h2>Project: Employee Emotion Detection Using Computer Vision</h2>
+    <ul>
+      <li>Built a deep learning model using Xception and TensorFlow, trained on a filtered FER2013 dataset (10,000 images, 5 emotions).</li>
+      <li>Applied data augmentation and used custom video frames for real-world testing.</li>
+      <li>Achieved high accuracy with early stopping and learning rate scheduling.</li>
+    </ul>
+    <h2>Project: Resume Parser using AI</h2>
+    <ul>
+      <li>Developed a Python script to automatically extract key information from PDF resumes (e.g., email, phone, education, skills) using PyMuPDF and Regex.</li>
+      <li>Designed to quickly analyze and identify relevant data from structured and unstructured CVs.</li>
+      <li><em>Skills used:</em> Python, Regex, PyMuPDF</li>
+    </ul>
+  `
+};
 
-      const enText = {
-        welcome: 'WELCOME', subtitle: 'I’m Mohammed Alhujaili, AI Enthusiast & Developer',
-        nav: ['ABOUT', 'PROJECTS', 'CONTACT'],
-        aboutTitle: 'About Me',
-        aboutText: 'Artificial Intelligence student skilled in building machine learning models, analyzing complex data, and developing AI-driven solutions. Proficient in Python and deep learning frameworks like TensorFlow. Passionate about solving real-world problems through innovative, efficient AI applications.',
-        projectTitle: 'Project: Employee Emotion Detection Using Computer Vision',
-        projectList: `
-          <li>Built a deep learning model using Xception and TensorFlow, trained on a filtered FER2013 dataset (10,000 images, 5 emotions).</li>
-          <li>Applied data augmentation and used custom video frames for real-world testing.</li>
-          <li>Achieved high accuracy with early stopping and learning rate scheduling.</li>`
-      };
 
       const text = lang === 'ar' ? arText : enText;
       document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -217,7 +233,7 @@ projectList2: `
       document.getElementById('about-title').innerText = text.aboutTitle;
       document.getElementById('about-text').innerText = text.aboutText;
       document.getElementById('projects-title').innerText = text.projectTitle;
-     document.getElementById('projects-list').innerHTML = text.projectList + (text.projectList2 || '');
+      document.getElementById('projects-list').innerHTML = text.projectList;
       document.getElementById('contact-title').innerText = lang === 'ar' ? 'تواصل' : 'Contact';
       document.getElementById('resume-btn').innerText = lang === 'ar' ? 'تحميل السيرة الذاتية' : 'Download Resume';
     }
