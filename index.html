@@ -245,7 +245,7 @@ body.dark .footer-txt{color:#222}
   </div>
   <div class="nav-right">
     <button class="dark-toggle" onclick="toggleDark()" title="Toggle dark mode">🌙</button>
-    <button class="nav-cv-btn" id="nav-cv" onclick="window.open('https://drive.google.com/uc?export=download&id=YOUR_CV_FILE_ID','_blank')">CV ↓</button>
+    <button class="nav-cv-btn" id="nav-cv" onclick="window.open('https://Mohammed1Alhujaili.github.io/portfolio/Mohammed_Alhujaili_CV.pdf','_blank')">CV ↓</button>
   </div>
 </nav>
 
@@ -267,13 +267,14 @@ body.dark .footer-txt{color:#222}
           <span class="hero-role">NLP</span>
           <span class="hero-role">Explainable AI</span>
           <span class="hero-role">ML Systems</span>
+          <span class="hero-role">RAG Systems</span>
         </div>
         <div class="hero-cta reveal" data-d=".14">
           <button class="btn-black" onclick="goTo('projects')">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             View Projects
           </button>
-          <a href="https://drive.google.com/uc?export=download&id=YOUR_CV_FILE_ID" download="Mohammed_Alhujaili_CV.pdf" class="btn-ghost">
+          <a href="https://Mohammed1Alhujaili.github.io/portfolio/Mohammed_Alhujaili_CV.pdf" download="Mohammed_Alhujaili_CV.pdf" class="btn-ghost">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download CV
           </a>
@@ -282,7 +283,7 @@ body.dark .footer-txt{color:#222}
         <div class="hero-stats reveal" data-d=".18">
           <div class="hero-stat"><div class="stat-val counter" data-t="96.9" data-s="%" data-dec="1">0%</div><div class="stat-lbl">Best Recall</div></div>
           <div class="hero-stat"><div class="stat-val counter" data-t="0.92" data-s="" data-dec="2">0</div><div class="stat-lbl">F1 Score</div></div>
-          <div class="hero-stat"><div class="stat-val counter" data-t="3.6" data-s="" data-dec="1">0</div><div class="stat-lbl">GPA / 4.0</div></div>
+          <div class="hero-stat"><div class="stat-val counter" data-t="3.69" data-s="" data-dec="1">0</div><div class="stat-lbl">GPA / 4.0</div></div>
           <div class="hero-stat"><div class="stat-val counter" data-t="148" data-s="K" data-dec="0">0</div><div class="stat-lbl">Images Trained</div></div>
         </div>
       </div>
@@ -304,7 +305,7 @@ body.dark .footer-txt{color:#222}
       <div class="ach-card" onclick="goTo('projects')"><span class="ach-icon">🎯</span><div class="ach-val">96.9%</div><div class="ach-lbl">Recall on DFDC Benchmark Dataset</div><div class="ach-arrow">→ See Metrics</div></div>
       <div class="ach-card" onclick="goTo('projects')"><span class="ach-icon">📊</span><div class="ach-val">0.92</div><div class="ach-lbl">F1 Score — DeepFake Detection System</div><div class="ach-arrow">→ See Results</div></div>
       <div class="ach-card" onclick="goTo('projects')"><span class="ach-icon">🧠</span><div class="ach-val">148K+</div><div class="ach-lbl">Images used in model training (DFDC)</div><div class="ach-arrow">→ See Architecture</div></div>
-      <div class="ach-card" onclick="goTo('education')"><span class="ach-icon">🎓</span><div class="ach-val">3.6</div><div class="ach-lbl">GPA / 4.0 — UQU AI Programme</div><div class="ach-arrow">→ View Education</div></div>
+      <div class="ach-card" onclick="goTo('education')"><span class="ach-icon">🎓</span><div class="ach-val">3.69</div><div class="ach-lbl">GPA / 4.0 — UQU AI Programme</div><div class="ach-arrow">→ View Education</div></div>
       <div class="ach-card" onclick="goTo('experience')"><span class="ach-icon">⚡</span><div class="ach-val">~40%</div><div class="ach-lbl">Processing time reduction at SEGI Internship</div><div class="ach-arrow">→ View Experience</div></div>
     </div>
   </div>
@@ -417,6 +418,53 @@ body.dark .footer-txt{color:#222}
         </div>
       </div>
     </div>
+
+    <!-- P3: RAG -->
+    <div class="proj-item reveal" data-d=".12">
+      <div class="proj-header" onclick="toggleP(this)">
+        <div style="flex:1">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px">
+            <span class="proj-meta-txt">Personal Project · 2026 — Present</span>
+          </div>
+          <div class="proj-title-txt">Arabic Quran Tafsir RAG System</div>
+        </div>
+        <div class="proj-toggle-btn">+</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-stack-tags">
+          <span class="proj-stack-tag">LangChain</span><span class="proj-stack-tag">ChromaDB</span>
+          <span class="proj-stack-tag">HuggingFace</span><span class="proj-stack-tag">Python</span>
+          <span class="proj-stack-tag">RAG</span><span class="proj-stack-tag">Arabic NLP</span>
+        </div>
+        <div class="proj-2col">
+          <div>
+            <div class="proj-section-ttl">Problem</div>
+            <p class="proj-desc">Accessing and querying classical Arabic Quran Tafsir (exegesis) texts is difficult without deep linguistic knowledge and context-aware retrieval systems.</p>
+            <div class="proj-section-ttl">Solution</div>
+            <p class="proj-desc">RAG pipeline for Arabic Tafsir queries: data fetching → embedding → ChromaDB vector storage → LLM-powered retrieval with semantic search.</p>
+            <div class="proj-section-ttl">Architecture</div>
+            <p class="proj-desc" style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.9">Data Fetch → Arabic Embedding → ChromaDB → Query → LLM Retrieval → Response</p>
+            <div class="proj-section-ttl" style="margin-top:16px">Highlights</div>
+            <div class="proj-blt"><span style="font-weight:700;flex-shrink:0">—</span><span>Arabic-first NLP pipeline with semantic vector search</span></div>
+            <div class="proj-blt"><span style="font-weight:700;flex-shrink:0">—</span><span>ChromaDB for efficient embedding storage and retrieval</span></div>
+            <div class="proj-blt"><span style="font-weight:700;flex-shrink:0">—</span><span>LangChain orchestration for end-to-end RAG workflow</span></div>
+            <div class="proj-links-row">
+              <a href="https://github.com/Mohammed1Alhujaili" target="_blank" class="proj-link-btn primary">⌥ GitHub</a>
+              <span class="proj-link-btn" style="opacity:.4;cursor:default">🔄 In Progress</span>
+            </div>
+          </div>
+          <div>
+            <div class="proj-section-ttl">Stack</div>
+            <div class="metrics-grid">
+              <div class="metric-c"><div class="metric-v">RAG</div><div class="metric-l">Architecture</div></div>
+              <div class="metric-c"><div class="metric-v">Arabic</div><div class="metric-l">Language</div></div>
+              <div class="metric-c"><div class="metric-v">ChromaDB</div><div class="metric-l">Vector DB</div></div>
+              <div class="metric-c"><div class="metric-v">LLM</div><div class="metric-l">Retrieval</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div style="border-top:1px solid var(--border)"></div>
   </div>
 </section>
@@ -435,7 +483,7 @@ body.dark .footer-txt{color:#222}
       </div>
       <div>
         <div class="skill-item"><span class="skill-name-txt">Grad-CAM / Explainable AI</span><div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div></div><span class="skill-level-txt">Advanced</span></div></div>
-        <div class="skill-item"><span class="skill-name-txt">Gradio / Flask / FastAPI</span><div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div><div class="skill-dot"></div></div><span class="skill-level-txt">Intermediate</span></div></div>
+        <div class="skill-item"><span class="skill-name-txt">Flask / Gradio / FastAPI / LangChain</span><div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div><div class="skill-dot"></div></div><span class="skill-level-txt">Intermediate</span></div></div>
         <div class="skill-item"><span class="skill-name-txt">Pandas / NumPy / Matplotlib</span><div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div></div><span class="skill-level-txt">Advanced</span></div></div>
         <div class="skill-item"><span class="skill-name-txt">Git / GitHub</span><div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div></div><span class="skill-level-txt">Advanced</span></div></div>
         <div class="skill-item"><span class="skill-name-txt">Java / MATLAB</span><div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div><div class="skill-dot"></div></div><span class="skill-level-txt">Intermediate</span></div></div>
@@ -455,6 +503,8 @@ body.dark .footer-txt{color:#222}
       <div class="tech-item"><span class="tech-emoji">🚀</span><span class="tech-name">FastAPI</span></div>
       <div class="tech-item"><span class="tech-emoji">🔬</span><span class="tech-name">Scikit-learn</span></div>
       <div class="tech-item"><span class="tech-emoji">🗂</span><span class="tech-name">Git</span></div>
+      <div class="tech-item"><span class="tech-emoji">🔗</span><span class="tech-name">LangChain</span></div>
+      <div class="tech-item"><span class="tech-emoji">🗄</span><span class="tech-name">ChromaDB</span></div>
     </div>
   </div>
 </section>
@@ -464,7 +514,7 @@ body.dark .footer-txt{color:#222}
   <div class="section-inner">
     <div class="section-label reveal">Experience</div>
     <div class="timeline reveal" data-d=".05">
-      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Jun – Sep 2024</div><div class="tl-title">AI Automation Intern</div><div class="tl-org">Saudi Engineering Group International (SEGI) · Engineering Control Division</div><div class="tl-blt"><span style="font-weight:700">—</span><span>Built OCR pipelines (Python + Tesseract) — reduced processing time by ~40%</span></div><div class="tl-blt"><span style="font-weight:700">—</span><span>Automated document validation across multiple engineering divisions</span></div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Mar – Jul 2025</div><div class="tl-title">AI Automation Intern</div><div class="tl-org">Saudi Engineering Group International (SEGI) · Engineering Control Division</div><div class="tl-blt"><span style="font-weight:700">—</span><span>Built OCR pipelines (Python + Tesseract) — reduced processing time by ~40%</span></div><div class="tl-blt"><span style="font-weight:700">—</span><span>Automated document validation across multiple engineering divisions</span></div></div>
     </div>
   </div>
 </section>
@@ -473,7 +523,7 @@ body.dark .footer-txt{color:#222}
   <div class="section-inner">
     <div class="section-label reveal">Education</div>
     <div class="timeline reveal" data-d=".05">
-      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2022 — 2026</div><div class="tl-title">B.Sc. in Artificial Intelligence — GPA 3.6 / 4.0</div><div class="tl-org">Umm Al-Qura University — Makkah, Saudi Arabia</div><div class="tl-blt"><span style="font-weight:700">—</span><span>Deep Learning · Computer Vision · ML · Neural Networks · NLP · Data Structures · Python</span></div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2022 — 2026</div><div class="tl-title">B.Sc. in Artificial Intelligence — GPA 3.69 / 4.0</div><div class="tl-org">Umm Al-Qura University — Makkah, Saudi Arabia</div><div class="tl-blt"><span style="font-weight:700">—</span><span>Deep Learning · Computer Vision · ML · Neural Networks · NLP · Data Structures · Python</span></div></div>
       <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2024</div><div class="tl-title">ML & Deep Learning Specializations</div><div class="tl-org">Stanford / Andrew Ng · DeepLearning.AI · Coursera</div></div>
     </div>
 
@@ -500,7 +550,7 @@ body.dark .footer-txt{color:#222}
         <a href="https://github.com/Mohammed1Alhujaili" target="_blank" class="contact-lnk"><span class="contact-lnk-label">GitHub</span><span class="contact-lnk-val">⌥ Mohammed1Alhujaili</span></a>
         <a href="https://www.linkedin.com/in/mohammed-alhujaili-8107b8271" target="_blank" class="contact-lnk"><span class="contact-lnk-label">LinkedIn</span><span class="contact-lnk-val">in mohammed-alhujaili</span></a>
       </div>
-      <a href="https://drive.google.com/uc?export=download&id=YOUR_CV_FILE_ID" download="Mohammed_Alhujaili_CV.pdf" class="contact-dl">
+      <a href="https://Mohammed1Alhujaili.github.io/portfolio/Mohammed_Alhujaili_CV.pdf" download="Mohammed_Alhujaili_CV.pdf" class="contact-dl">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download CV — PDF
       </a>
